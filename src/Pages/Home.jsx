@@ -111,11 +111,11 @@ function Home() {
                             }
                         ].map((member, index) => (
                             <div key={index} className="bg-white rounded shadow-md overflow-hidden group">
-                                <div className="h-64 overflow-hidden">
+                                <div className="h-72 w-full overflow-hidden">
                                     <img
                                      src={member.image}
                                      alt={member.name}
-                                     className="w-full h-[400px] object-cover object-top rounded-lg transition-transform duration-500 group-hover:scale-105"
+                                     className="w-full h-[400px] object-cover object-center rounded-lg transition-transform duration-500 group-hover:scale-105"
                                     />
                                 </div>
                                 <div className="p-6">
@@ -166,7 +166,7 @@ function Home() {
                                         </div>
                                         <div>
                                             <h4 className="font-medium">Phone</h4>
-                                            <p className="text-gray-600">+44 20 7123 4567</p>
+                                            <p className="text-gray-600">+234 802 732 8872</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">

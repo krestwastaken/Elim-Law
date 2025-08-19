@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Contact = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Contact = () => {
     message: '',
     privacyAccepted: false
   });
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [openFaq, setOpenFaq] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value, type } = e.target;
@@ -61,55 +61,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <div className="mr-4">
-              <div className="flex items-end">
-                <div className="bg-[#004D2E] h-10 w-6 mr-1"></div>
-                <div className="bg-[#004D2E] h-12 w-6 mr-1"></div>
-                <div className="bg-[#004D2E] h-14 w-6"></div>
-              </div>
-              <div className="bg-[#004D2E] h-0.5 w-20 mt-1"></div>
-            </div>
-            <div>
-              <h1 className="text-[#004D2E] text-2xl font-serif font-bold">ELIM LAW PRACTICE</h1>
-              <p className="text-[#004D2E] text-xs tracking-wider">BARRISTERS & SOLICITORS</p>
-            </div>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/e76d046b-52c8-48f7-a2c3-a210e809c74e" data-readdy="true" className="text-[#004D2E] hover:text-[#006d42] font-medium whitespace-nowrap cursor-pointer">Home</a>
-            <a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/9964b298-d53e-4287-8862-8c437892f9f3" data-readdy="true" className="text-[#004D2E] hover:text-[#006d42] font-medium whitespace-nowrap cursor-pointer">About Us</a>
-            <a href="#" className="text-[#004D2E] hover:text-[#006d42] font-medium whitespace-nowrap cursor-pointer">Practice Areas</a>
-            <a href="#" className="text-[#004D2E] hover:text-[#006d42] font-medium whitespace-nowrap cursor-pointer">Our Team</a>
-            <a href="#" className="text-[#004D2E] hover:text-[#006d42] font-medium whitespace-nowrap border-b-2 border-[#004D2E] cursor-pointer">Contact</a>
-          </nav>
-
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden text-[#004D2E] cursor-pointer !rounded-button whitespace-nowrap"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden bg-white py-4 px-4 shadow-inner">
-            <div className="flex flex-col space-y-4">
-              <a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/e76d046b-52c8-48f7-a2c3-a210e809c74e" data-readdy="true" className="text-[#004D2E] hover:text-[#006d42] font-medium cursor-pointer">Home</a>
-              <a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/9964b298-d53e-4287-8862-8c437892f9f3" data-readdy="true" className="text-[#004D2E] hover:text-[#006d42] font-medium cursor-pointer">About Us</a>
-              <a href="#" className="text-[#004D2E] hover:text-[#006d42] font-medium cursor-pointer">Practice Areas</a>
-              <a href="#" className="text-[#004D2E] hover:text-[#006d42] font-medium cursor-pointer">Our Team</a>
-              <a href="#" className="text-[#004D2E] hover:text-[#006d42] font-medium border-b border-[#004D2E] cursor-pointer">Contact</a>
-            </div>
-          </nav>
-        )}
-      </header>
+      
 
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden bg-gradient-to-r from-[#004D2E] to-[#006d42]">
@@ -128,7 +80,7 @@ const Contact = () => {
               <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center">
                 <i className="fas fa-phone text-3xl mb-3"></i>
                 <h3 className="font-serif font-bold mb-2">Call Us</h3>
-                <p className="text-sm">+44 20 7123 4567</p>
+                <p className="text-sm">+234 802 732 8872</p>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center">
                 <i className="fas fa-envelope text-3xl mb-3"></i>
@@ -286,8 +238,8 @@ const Contact = () => {
                       <i className="fas fa-phone text-white"></i>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-[#004D2E] mb-1">Phone Numbers</h4>
-                      <p className="text-gray-600">Main: +44 20 7123 4567<br />Emergency: +44 20 7123 4568</p>
+                      <h4 className="font-semibold text-[#004D2E] mb-1">Phone Number</h4>
+                      <p className="text-gray-600">Main: +234 802 732 8872</p>
                     </div>
                   </div>
                   
@@ -297,7 +249,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#004D2E] mb-1">Email Addresses</h4>
-                      <p className="text-gray-600">General: info@elimlawpractice.com<br />New Clients: newclient@elimlawpractice.com</p>
+                      <p className="text-gray-600">General: info@elimlawpractice.com</p>
                     </div>
                   </div>
                   
@@ -316,10 +268,7 @@ const Contact = () => {
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h3 className="text-2xl font-serif font-bold text-[#004D2E] mb-6">Getting Here</h3>
                 <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-[#004D2E] mb-2">By Underground</h4>
-                    <p className="text-gray-600 text-sm">Bank Station (Central, Northern, Waterloo & City lines) - 3 minutes walk</p>
-                  </div>
+                  
                   <div>
                     <h4 className="font-semibold text-[#004D2E] mb-2">By Bus</h4>
                     <p className="text-gray-600 text-sm">Routes 8, 25, 26, 242 stop nearby</p>
@@ -328,10 +277,6 @@ const Contact = () => {
                     <h4 className="font-semibold text-[#004D2E] mb-2">Parking</h4>
                     <p className="text-gray-600 text-sm">Limited street parking available. NCP car park 2 minutes walk.</p>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-[#004D2E] mb-2">Accessibility</h4>
-                    <p className="text-gray-600 text-sm">Wheelchair accessible entrance and facilities available.</p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -339,26 +284,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif font-bold text-[#004D2E] mb-4">Find Our Office</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Located in the heart of London's financial district, our office is easily accessible by public transport and offers convenient parking options.</p>
-          </div>
-          
-          <div className="bg-gray-200 h-96 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
-            <div className="text-center">
-              <i className="fas fa-map-marked-alt text-6xl text-[#004D2E] mb-4"></i>
-              <h3 className="text-xl font-serif font-bold text-[#004D2E] mb-2">Interactive Map</h3>
-              <p className="text-gray-600">123 Legal Avenue, Suite 500, London, EC2V 7EE</p>
-              <button className="mt-4 bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap">
-                Get Directions
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
