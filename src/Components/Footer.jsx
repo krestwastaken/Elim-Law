@@ -32,13 +32,16 @@ const Footer = () => {
                     <div>
                         <h3 className="text-xl font-serif font-bold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/e76d046b-52c8-48f7-a2c3-a210e809c74e" data-readdy="true" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Home</a></li>
-                            <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">About Us</a></li>
-                            <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Practice Areas</a></li>
-                            <li><a href="#" className="hover:text-gray-300 font-bold cursor-pointer !rounded-button whitespace-nowrap">Our Team</a></li>
-                            <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Contact</a></li>
-                            <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Privacy Policy</a></li>
-                            <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Terms of Service</a></li>
+                            <nav>
+                                <li><Link to="/" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Home</Link></li>
+                                <li><Link to="/about" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">About Us</Link></li>
+                                <li><Link to="/practice-areas" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Practice Areas</Link></li>
+                                <li><a href="#" className="hover:text-gray-300 font-bold cursor-pointer !rounded-button whitespace-nowrap">Our Team</a></li>
+                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Contact</a></li>
+                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Privacy Policy</a></li>
+                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Terms of Service</a></li>
+                            </nav>
+                            
                         </ul>
                     </div>
                     <div>
@@ -46,7 +49,7 @@ const Footer = () => {
                         <ul className="space-y-3">
                             <li className="flex items-start">
                                 <i className="fas fa-map-marker-alt mt-1 mr-3"></i>
-                                <span>123 Legal Avenue, Suite 500<br />London, EC2V 7EE</span>
+                                <span>776 Lagos-Abeokuta Expressway<br />Lagos</span>
                             </li>
                             <li className="flex items-center">
                                 <i className="fas fa-phone mr-3"></i>

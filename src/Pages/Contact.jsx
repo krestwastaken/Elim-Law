@@ -229,7 +229,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#004D2E] mb-1">Office Address</h4>
-                      <p className="text-gray-600">123 Legal Avenue, Suite 500<br />London, EC2V 7EE<br />United Kingdom</p>
+                      <p className="text-gray-600">776 Lagos-Abeokuta Expressway<br />Lagos<br />Nigeria</p>
                     </div>
                   </div>
                   
@@ -349,7 +349,7 @@ const Contact = () => {
               <p className="text-gray-600 mb-4">24/7 emergency legal assistance available for urgent matters.</p>
               <div className="text-[#004D2E] font-semibold">
                 Emergency Line:<br />
-                +44 20 7123 4568
+                +234 802 732 8872
               </div>
             </div>
             
@@ -365,86 +365,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#004D2E] text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center mb-4">
-                <div className="mr-3">
-                  <div className="flex items-end">
-                    <div className="bg-white h-8 w-4 mr-1"></div>
-                    <div className="bg-white h-10 w-4 mr-1"></div>
-                    <div className="bg-white h-12 w-4"></div>
-                  </div>
-                  <div className="bg-white h-0.5 w-16 mt-1"></div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-serif font-bold">ELIM LAW PRACTICE</h3>
-                  <p className="text-xs tracking-wider">BARRISTERS & SOLICITORS</p>
-                </div>
-              </div>
-              <p className="mb-4">Providing exceptional legal services with integrity and dedication since 2016.</p>
-              <div className="flex space-x-4">
-                <a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-serif font-bold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/e76d046b-52c8-48f7-a2c3-a210e809c74e" data-readdy="true" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Home</a></li>
-                <li><a href="https://readdy.ai/home/d66b71df-70ec-4055-a03e-45ce2d423138/9964b298-d53e-4287-8862-8c437892f9f3" data-readdy="true" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">About Us</a></li>
-                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Practice Areas</a></li>
-                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Our Team</a></li>
-                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Contact</a></li>
-                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Terms of Service</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-serif font-bold mb-4">Contact Information</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <i className="fas fa-map-marker-alt mt-1 mr-3"></i>
-                  <span>123 Legal Avenue, Suite 500<br />London, EC2V 7EE</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-phone mr-3"></i>
-                  <span>+44 20 7123 4567</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-envelope mr-3"></i>
-                  <span>info@elimlawpractice.com</span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-clock mr-3"></i>
-                  <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
-                </li>
-              </ul>
-              <div className="mt-4 flex space-x-3">
-                <i className="fab fa-cc-visa text-2xl"></i>
-                <i className="fab fa-cc-mastercard text-2xl"></i>
-                <i className="fab fa-cc-amex text-2xl"></i>
-                <i className="fab fa-paypal text-2xl"></i>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-            <p>&copy; {new Date().getFullYear()} Elim Law Practice. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

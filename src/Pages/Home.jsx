@@ -157,7 +157,7 @@ function Home() {
                                         </div>
                                         <div>
                                             <h4 className="font-medium">Address</h4>
-                                            <p className="text-gray-600">123 Legal Avenue, Suite 500<br />London, EC2V 7EE</p>
+                                            <p className="text-gray-600">776 Lagos-Abeokuta Expressway<br />Lagos</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
