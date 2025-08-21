@@ -156,7 +156,7 @@ function Home() {
                                             <i className="fas fa-map-marker-alt"></i>
                                         </div>
                                         <div>
-                                            <h4 className="font-medium">Address</h4>
+                                            <h4 className="font-medium text-green-900">Address</h4>
                                             <p className="text-gray-600">776 Lagos-Abeokuta Expressway<br />Lagos</p>
                                         </div>
                                     </div>
@@ -165,7 +165,7 @@ function Home() {
                                             <i className="fas fa-phone"></i>
                                         </div>
                                         <div>
-                                            <h4 className="font-medium">Phone</h4>
+                                            <h4 className="font-medium text-green-900">Phone</h4>
                                             <p className="text-gray-600">+234 802 732 8872</p>
                                         </div>
                                     </div>
@@ -174,7 +174,7 @@ function Home() {
                                             <i className="fas fa-envelope"></i>
                                         </div>
                                         <div>
-                                            <h4 className="font-medium">Email</h4>
+                                            <h4 className="font-medium text-green-900">Email</h4>
                                             <p className="text-gray-600">info@elimlawpractice.com</p>
                                         </div>
                                     </div>
@@ -183,7 +183,7 @@ function Home() {
                                             <i className="fas fa-clock"></i>
                                         </div>
                                         <div>
-                                            <h4 className="font-medium">Hours</h4>
+                                            <h4 className="font-medium text-green-900">Hours</h4>
                                             <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday & Sunday: Closed</p>
                                         </div>
                                     </div>

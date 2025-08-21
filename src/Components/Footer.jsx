@@ -36,10 +36,10 @@ const Footer = () => {
                                 <li><Link to="/" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Home</Link></li>
                                 <li><Link to="/about" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">About Us</Link></li>
                                 <li><Link to="/practice-areas" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Practice Areas</Link></li>
-                                <li><a href="#" className="hover:text-gray-300 font-bold cursor-pointer !rounded-button whitespace-nowrap">Our Team</a></li>
-                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Contact</a></li>
-                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Privacy Policy</a></li>
-                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Terms of Service</a></li>
+                                
+                                <li><Link to="/contact" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Contact</Link></li>
+                                {/* <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Privacy Policy</a></li>
+                                <li><a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">Terms of Service</a></li> */}
                             </nav>
                             
                         </ul>
