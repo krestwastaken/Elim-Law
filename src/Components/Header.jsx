@@ -1,41 +1,38 @@
-// src/components/Header.jsx
 import logo from '../assets/logo.png';
-
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const linkClasses = ({ isActive }) => {
+    return `font-medium pb-1 border-b-2 border-transparent transition-all duration-300 ${
+      isActive
+        ? "text-green-900 border-green-600 hover:text-green-800"
+        : "text-green-800 hover:text-green-700 hover:border-green-700"
+    }`;
+  };
 
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className='flex items-center'>
-          <img
-           src={logo}
-           alt='Elim Law Practice Logo'
-           className='h-14 md:h-16 w-auto object-contain'
-          />
+          <NavLink to="/">
+            <img
+             src={logo}
+             alt='Elim Law Practice Logo'
+             className='h-14 md:h-16 w-auto object-contain'
+            />
+          </NavLink>          
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-[#004D2E] hover:text-[#006d42] font-medium">
-            Home
-          </Link>
-          <Link to="/about" className="text-[#004D2E] hover:text-[#006d42] font-medium">
-            About Us
-          </Link>
-          <Link to="/practice-areas" className="text-[#004D2E] hover:text-[#006d42] font-medium">
-            Practice Areas
-          </Link>
-          {/* <Link to="/teams" className="text-[#004D2E] hover:text-[#006d42] font-medium">
-            Our Team
-          </Link> */}
-          <Link to="/contact" className="text-[#004D2E] hover:text-[#006d42] font-medium">
-            Contact
-          </Link>
+          <NavLink to="/" className={linkClasses}>Home</NavLink>
+          <NavLink to="/about" className={linkClasses}>About Us</NavLink>
+          <NavLink to="/practice-areas" className={linkClasses}>Practice Areas</NavLink>
+          <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
         </nav>
 
         {/* Mobile menu button */}
@@ -51,11 +48,10 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="md:hidden bg-white py-4 px-4 shadow-inner">
           <div className="flex flex-col space-y-4">
-            <Link to="/" className="text-[#004D2E] hover:text-[#006d42] font-medium">Home</Link>
-            <Link to="/about" className="text-[#004D2E] hover:text-[#006d42] font-medium">About Us</Link>
-            <Link to="/practice-areas" className="text-[#004D2E] hover:text-[#006d42] font-medium">Practice Areas</Link>
-            {/* <Link to="/team" className="text-[#004D2E] hover:text-[#006d42] font-medium">Our Team</Link> */}
-            <Link to="/contact" className="text-[#004D2E] hover:text-[#006d42] font-medium">Contact</Link>
+            <NavLink to="/" className={linkClasses}>Home</NavLink>
+            <NavLink to="/about" className={linkClasses}>About Us</NavLink>
+            <NavLink to="/practice-areas" className={linkClasses}>Practice Areas</NavLink>
+            <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
           </div>
         </nav>
       )}
