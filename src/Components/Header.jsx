@@ -1,6 +1,9 @@
 import logo from '../assets/logo.png';
+
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HiMenu } from 'react-icons/hi';
+import { HiX } from 'react-icons/hi';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,10 +40,10 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-[#004D2E] cursor-pointer"
+          className="md:hidden text-[#004D2E] cursor-pointer bg-gray-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"} text-2xl`}></i>
+          {isMenuOpen ? <HiX /> : <HiMenu />}
         </button>
       </div>
 

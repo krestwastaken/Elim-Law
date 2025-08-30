@@ -29,20 +29,17 @@ const AboutUs = () => {
                                 {
                                     year: '2020',
                                     title: 'Virtual Practice Innovation',
-                                    description: 'Pioneered virtual legal services and remote client engagement while maintaining exceptional service standards.',
-                                    image: 'https://readdy.ai/api/search-image?query=Modern%20hybrid%20law%20office%20with%20advanced%20video%20conferencing%20setup%2C%20virtual%20meeting%20technology%2C%20contemporary%20workspace%2C%20innovative%20legal%20practice%20environment%2C%20clean%20background&width=300&height=200&seq=8&orientation=landscape'
+                                    description: 'Pioneered virtual legal services and remote client engagement while maintaining exceptional service standards.',                                    
                                 },
                                 {
                                     year: '2022',
                                     title: 'Sustainability Initiative',
                                     description: 'Launched comprehensive sustainability program, implementing paperless solutions and eco-friendly practices.',
-                                    image: 'https://readdy.ai/api/search-image?query=Eco%20friendly%20modern%20law%20office%20with%20sustainable%20design%20elements%2C%20paperless%20workspace%2C%20natural%20lighting%2C%20green%20office%20environment%2C%20contemporary%20legal%20practice%2C%20clean%20background&width=300&height=200&seq=9&orientation=landscape'
                                 },
                                 {
                                     year: '2025',
                                     title: 'Future Forward',
-                                    description: 'Setting new standards in legal practice with innovative solutions and client-centered service excellence.',
-                                    image: 'https://readdy.ai/api/search-image?query=Ultra%20modern%20law%20office%20with%20cutting%20edge%20technology%2C%20future%20forward%20design%2C%20innovative%20legal%20workspace%2C%20contemporary%20professional%20environment%2C%20clean%20sophisticated%20background&width=300&height=200&seq=11&orientation=landscape'
+                                    description: 'Setting new standards in legal practice with innovative solutions and client-centered service excellence.',                                    
                                 }
                             ].map((milestone, index) => (
                                 <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -57,12 +54,8 @@ const AboutUs = () => {
                                         <div className="w-8 h-8 bg-white rounded-full"></div>
                                     </div>
                                     <div className={`w-1/2 ${index % 2 === 0 ? 'pl-8' : 'pr-8'}`}>
-                                        <div className="w-full h-48 rounded-lg overflow-hidden shadow-md">
-                                            <img
-                                             src={milestone.image}
-                                             alt={milestone.title}
-                                             className="w-full h-full object-cover object-top"
-                                            />
+                                        <div className="w-full h-48 rounded-lg overflow-hidden shadow-md bg-gray-100">
+                                            
                                         </div>
                                     </div>
                                 </div>

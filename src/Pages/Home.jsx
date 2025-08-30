@@ -33,10 +33,10 @@ function Home() {
                     {[
                         { icon: 'fa-landmark', title: 'Corporate Law', description: 'Expert legal advice for businesses of all sizes, from startups to established corporations.' },
                         { icon: 'fa-gavel', title: 'Litigation', description: 'Skilled representation in court proceedings and dispute resolution across various legal matters.' },
-                        { icon: 'fa-home', title: 'Real Estate Law', description: 'Comprehensive legal services for property transactions, leasing, and development projects.' },
-                        { icon: 'fa-users', title: 'Family Law', description: 'Compassionate guidance through divorce, child custody, and other family legal matters.' },
-                        { icon: 'fa-balance-scale', title: 'Criminal Defense', description: 'Strategic defense representation for individuals facing criminal charges.' },
-                        { icon: 'fa-file-contract', title: 'Estate Planning', description: 'Personalized planning for wills, trusts, and asset protection to secure your legacy.' }
+                        { icon: 'fa-home', title: 'Banking and Finance', description: 'Helps banks, businesses, and individuals manage loans, investments, and financial transactions while staying within the rules.' },
+                        { icon: 'fa-users', title: 'Project Finance', description: 'Supports big projects like roads, power plants, or factories by setting up clear agreements on funding, risks, and responsibilities so the project can run smoothly.' },
+                        { icon: 'fa-balance-scale', title: 'Property Law', description: 'Deals with owning, buying, selling, or renting land and buildings. It protects people’s rights to their property and helps resolve disputes if they arise.' },
+                        { icon: 'fa-file-contract', title: 'Oil and Gas', description: 'Covers the rules for finding, drilling, and selling oil and gas.' }
                     ].map((area, index) => (
                         <div
                          key={index}
@@ -242,10 +242,11 @@ function Home() {
                                             <option value="">Select a Practice Area</option>
                                             <option value="corporate">Corporate Law</option>
                                             <option value="litigation">Litigation</option>
-                                            <option value="realestate">Real Estate Law</option>
-                                            <option value="family">Family Law</option>
-                                            <option value="criminal">Criminal Defense</option>
-                                            <option value="estate">Estate Planning</option>
+                                            <option value="bankingfinance-law">Banking and Finance Law</option>
+                                            <option value="project-financelaw">Project Finance Law</option>
+                                            <option value="propertylaw">Property Law</option>
+                                            <option value="oilgas-law">Oil and Gas Law</option>
+                                            <option value="mediaentertainment-law">Media and Entertainment Law</option>
                                         </select>
                                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                                             <i className="fas fa-chevron-down"></i>
