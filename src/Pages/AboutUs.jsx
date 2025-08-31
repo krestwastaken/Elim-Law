@@ -51,14 +51,14 @@ const AboutUs = () => {
                                             <p className="text-gray-600">{milestone.description}</p>
                                         </div>
                                     </div>
-                                    <div className="relative z-10 w-16 h-16 bg-[#004D2E] rounded-full flex items-center justify-center">
+                                    {/* <div className="relative z-10 w-16 h-16 bg-[#004D2E] rounded-full flex items-center justify-center">
                                         <div className="w-8 h-8 bg-white rounded-full"></div>
                                     </div>
                                     <div className={`w-1/2 ${index % 2 === 0 ? 'pl-8' : 'pr-8'}`}>
                                         <div className="w-full h-48 rounded-lg overflow-hidden shadow-md bg-gray-100">
                                             
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             ))}
                         </div>
