@@ -198,78 +198,33 @@ function Home() {
                             </div>
                         </div>
                         <div>
-                            <form id='contact-form' className="bg-gray-100 p-6 rounded shadow-md">
-                                <h3 className="text-xl font-serif font-bold text-[#004D2E] mb-4">Send Us a Message</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                    <div>
-                                        <label htmlFor="firstName" className="block text-gray-700 mb-1">First Name</label>
-                                        <input
-                                         type="text"
-                                         id="firstName"
-                                         className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="lastName" className="block text-gray-700 mb-1">Last Name</label>
-                                        <input
-                                         type="text"
-                                         id="lastName"
-                                         className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="mb-4">
-                                    <label htmlFor="email" className="block text-gray-700 mb-1">Email</label>
-                                    <input
-                                     type="email"
-                                     id="email"
-                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                    />
-                                </div>
-                                <div className="mb-4">
-                                    <label htmlFor="phone" className="block text-gray-700 mb-1">Phone</label>
-                                    <input
-                                     type="tel"
-                                     id="phone"
-                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                    />
-                                </div>
-                                <div className="mb-4">
-                                    <label htmlFor="practiceArea" className="block text-gray-700 mb-1">Practice Area</label>
-                                    <div className="relative">
-                                        <select
-                                         id="practiceArea"
-                                         className="appearance-none w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                        >
-                                            <option value="">Select a Practice Area</option>
-                                            <option value="corporate">Corporate Law</option>
-                                            <option value="litigation">Litigation</option>
-                                            <option value="bankingfinance-law">Banking and Finance Law</option>
-                                            <option value="project-financelaw">Project Finance Law</option>
-                                            <option value="propertylaw">Property Law</option>
-                                            <option value="oilgas-law">Oil and Gas Law</option>
-                                            <option value="mediaentertainment-law">Media and Entertainment Law</option>
-                                        </select>
-                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                            <i className="fas fa-chevron-down"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mb-6">
-                                    <label htmlFor="message" className="block text-gray-700 mb-1">Message</label>
-                                    <textarea
-                                     id="message"
-                                     rows={5}
-                                     className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                    ></textarea>
-                                </div>
-                                <button
-                                 type="submit"
-                                 className="bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap"
-                                >
-                                    Submit Message
-                                </button>
-                            </form>
+
+                        {/* Contact Section */}
+                        <section id='contact-form' className="bg-gray-100 p-6 rounded shadow-md text-center">
+                            <h3 className="text-3xl font-serif font-bold text-[#004D2E] mb-4">
+                                Book a Consultation
+                            </h3>
+                            <p className="text-gray-700 mb-6">
+                                Reach us directly via phone or email — we’ll be happy to assist you.
+                            </p>
+
+                            {/* Phone */}
+                            <a
+                                href="tel:+2348027328872"
+                                className="block text-lg font-semibold text-[#004D2E] hover:underline mb-4"
+                            >
+                                📞 +234 802 732 8872
+                            </a>
+
+                            {/* Email */}
+                            <a
+                                href="mailto:info@elimlawpractice.com"
+                                className="block text-lg font-semibold text-[#004D2E] hover:underline"
+                            >
+                                ✉️ info@elimlawpractice.com
+                            </a>
+                        </section>
+
                         </div>
                     </div>
                 </div>

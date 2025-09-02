@@ -1,6 +1,6 @@
 import logo2 from '../assets/logo2.png';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return(
@@ -8,11 +8,15 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
-                        <img 
-                         src={logo2}
-                         alt='Elim Law Practice Logo'
-                         className='h-16 w-auto object-contain mb-4'
-                        />
+                        <NavLink to='/' 
+                         onClick={() => window.scrollTo(0, 0)} 
+                        >
+                            <img
+                            src={logo2}
+                            alt='Elim Law Practice Logo'
+                            className='h-16 w-auto object-contain mb-4'
+                            />
+                        </NavLink>
                         <p className="mb-4">Providing exceptional legal services with integrity and dedication since 1995.</p>
                         <div className="flex space-x-4">
                             <a href="#" className="hover:text-gray-300 cursor-pointer !rounded-button whitespace-nowrap">
