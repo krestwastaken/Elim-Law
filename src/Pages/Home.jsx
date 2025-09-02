@@ -16,9 +16,11 @@ function Home() {
                 <div className="max-w-2xl text-white">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Excellence in Legal Representation</h2>
                     <p className="text-lg mb-8">With over 10 years of experience, we provide exceptional legal services tailored to your specific needs. Our team of dedicated professionals is committed to achieving the best possible outcomes for our clients.</p>
-                    <button className="bg-white text-[#004D2E] px-6 py-3 font-bold hover:bg-gray-100 transition duration-300 cursor-pointer !rounded-button whitespace-nowrap">
-                        Free Consultation
-                    </button>
+                    <a href='#contact-form'>
+                        <button className="bg-white text-[#004D2E] px-6 py-3 font-bold hover:bg-gray-100 transition duration-300 cursor-pointer !rounded-button whitespace-nowrap">
+                            Book Consultation
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -196,7 +198,7 @@ function Home() {
                             </div>
                         </div>
                         <div>
-                            <form className="bg-gray-100 p-6 rounded shadow-md">
+                            <form id='contact-form' className="bg-gray-100 p-6 rounded shadow-md">
                                 <h3 className="text-xl font-serif font-bold text-[#004D2E] mb-4">Send Us a Message</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                                     <div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HiMenu } from 'react-icons/hi';
 import { HiX } from 'react-icons/hi';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,29 @@ const Header = () => {
           className="md:hidden text-[#004D2E] cursor-pointer bg-gray-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <HiX /> : <HiMenu />}
+          <AnimatePresence mode='wait' initial={false}>
+            {isMenuOpen ? (
+              <motion.div
+               key='close'
+               initial={{ rotate: -90, opacity: 0 }}
+               animate={{ rotate: 0, opacity: 1 }}
+               exit={{ rotate: 90, opacity: 0 }}
+               transition={{ duration: 0.3 }}
+              >
+                <HiX size={20} />
+              </motion.div>
+            ) : (
+              <motion.div
+               key='menu'
+               initial={{ rotate: 90, opacity: 0 }}
+               animate={{ rotate: 0, opacity: 1 }}
+               exit={{ rotate: -90, opacity: 0 }}
+               transition={{ duration: 0.3 }}
+              >
+                <HiMenu size={20} />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </button>
       </div>
 
