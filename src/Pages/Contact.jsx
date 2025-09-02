@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 const Contact = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -100,126 +99,7 @@ const Contact = () => {
       {/* Contact Form Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-serif font-bold text-[#004D2E] mb-6">Send Us a Message</h2>
-              <p className="text-gray-600 mb-8">Complete the form below and we'll get back to you within 24 hours. For urgent matters, please call our office directly.</p>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="firstName" className="block text-gray-700 mb-2 font-medium">First Name *</label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent text-sm"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-gray-700 mb-2 font-medium">Last Name *</label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent text-sm"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2 font-medium">Email Address *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent text-sm"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-gray-700 mb-2 font-medium">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent text-sm"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="practiceArea" className="block text-gray-700 mb-2 font-medium">Practice Area</label>
-                  <div className="relative">
-                    <select
-                      id="practiceArea"
-                      name="practiceArea"
-                      value={formData.practiceArea}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent text-sm appearance-none cursor-pointer"
-                    >
-                      <option value="">Select a practice area</option>
-                      <option value="corporate">Corporate Law</option>
-                      <option value="litigation">Litigation</option>
-                      <option value="employment">Employment Law</option>
-                      <option value="real-estate">Real Estate</option>
-                      <option value="family">Family Law</option>
-                      <option value="criminal">Criminal Defense</option>
-                      <option value="other">Other</option>
-                    </select>
-                    <i className="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-gray-700 mb-2 font-medium">Message *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    placeholder="Please describe your legal matter and how we can assist you..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent text-sm resize-vertical"
-                  ></textarea>
-                </div>
-                
-                <div className="flex items-start">
-                  <input
-                    type="checkbox"
-                    id="privacyAccepted"
-                    name="privacyAccepted"
-                    checked={formData.privacyAccepted}
-                    onChange={handleInputChange}
-                    required
-                    className="mt-1 mr-3 cursor-pointer"
-                  />
-                  <label htmlFor="privacyAccepted" className="text-gray-600 text-sm cursor-pointer">
-                    I agree to the <a href="#" className="text-[#004D2E] hover:underline cursor-pointer">Privacy Policy</a> and consent to being contacted regarding my inquiry. *
-                  </label>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-[#004D2E] text-white px-6 py-4 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-            
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">            
               <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
                 <h3 className="text-2xl font-serif font-bold text-[#004D2E] mb-6">Contact Information</h3>
                 <div className="space-y-6">
@@ -279,11 +159,10 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
         </div>
       </section>
-
       
 
       {/* FAQ Section */}
@@ -357,9 +236,11 @@ const Contact = () => {
               <i className="fas fa-clock text-4xl text-[#004D2E] mb-6"></i>
               <h3 className="text-xl font-serif font-bold text-[#004D2E] mb-4">Flexible Scheduling</h3>
               <p className="text-gray-600 mb-4">Evening and weekend appointments available by arrangement.</p>
-              <button className="bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap">
-                Schedule Appointment
-              </button>
+              <a href='mailto:info@elimlawpractice.com'>
+                <button className="bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap">
+                  Schedule Appointment
+                </button>
+              </a>
             </div>
           </div>
         </div>

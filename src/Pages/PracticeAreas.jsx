@@ -23,9 +23,6 @@ const PracticeAreas = () => {
           <div className="max-w-2xl text-white">
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Practice Areas</h1>
             <p className="text-lg mb-8 leading-relaxed">With decades of combined experience across multiple legal disciplines, our expert attorneys provide comprehensive legal solutions tailored to your unique needs. From corporate transactions to personal legal matters, we deliver exceptional results with unwavering dedication.</p>
-            <button className="bg-[#004D2E] text-white px-8 py-4 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap">
-              Schedule Consultation
-            </button>
           </div>
         </div>
       </section>
