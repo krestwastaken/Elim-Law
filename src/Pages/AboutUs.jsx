@@ -1,3 +1,7 @@
+import aboutus from '../assets/About/aboutus.jpg'
+import aboutus2 from '../assets/About/aboutus2.jpg'
+import aboutus3 from '../assets/About/aboutus3.jpg'
+
 const AboutUs = () => {
     return (
         <div className="min-h-screen bg-white">        
@@ -169,11 +173,13 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="h-80 rounded-lg overflow-hidden shadow-lg bg-[#004D2E] bg-opacity-5 flex items-center justify-center">
+                            <img src={aboutus}/>
                             <i className="fas fa-balance-scale text-6xl text-[#004D2E]"></i>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                         <div className="order-2 lg:order-1 h-80 rounded-lg overflow-hidden shadow-lg bg-[#004D2E] bg-opacity-5 flex items-center justify-center">
+                            <img src={aboutus2}/>
                             <i className="fas fa-handshake text-6xl text-[#004D2E]"></i>
                         </div>
                         <div className="order-1 lg:order-2">
@@ -232,6 +238,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="h-80 rounded-lg overflow-hidden shadow-lg bg-[#004D2E] bg-opacity-5 flex items-center justify-center">
+                            <img src={aboutus3}/>
                             <i className="fas fa-award text-6xl text-[#004D2E]"></i>
                         </div>
                     </div>
