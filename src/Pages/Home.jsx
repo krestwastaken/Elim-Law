@@ -94,7 +94,7 @@ function Home() {
                                 description: 'Specializing in corporate law with nearly a decade of experience representing major corporations.'
                             },
                             {
-                                image: '',
+                                image: '/Team/noface.jpg',
                                 name: 'Peter E. Mbaba',
                                 role: 'Litigation Specialist',
                                 description: 'Expert in Dispute Resolution, Property Law, Banking and Finanace with a compassionate approach to client needs.'
@@ -192,14 +192,23 @@ function Home() {
                                 </div>
                                 <div className="mt-6 h-64 bg-gray-200 rounded">
                                     <div className="w-full h-full flex items-center justify-center">
-                                        <i className="fas fa-map-marked-alt text-4xl text-gray-400"></i>
+                                        <iframe
+                                         title="Office Location"
+                                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.7491627063127!2d3.269678!3d6.6779673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9768eccfb575%3A0x78fb7b285154e88c!2s776%20Lagos-Abeokuta%20Expy%2C%20opp.%20Masters%20Energy%20Filling%20Station%2C%20Alagbado%2C%20Lagos%20101001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1756916284589!5m2!1sen!2sng"
+                                         width="100%"
+                                         height="100%"
+                                         style={{ border: 0 }}
+                                         allowFullScreen=""
+                                         loading="lazy"
+                                         referrerPolicy="no-referrer-when-downgrade"
+                                        ></iframe>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
 
-                        {/* Contact Section */}
+                        {/* Consultation */}
                         <section id='contact-form' className="bg-gray-100 p-6 rounded shadow-md text-center">
                             <h3 className="text-3xl font-serif font-bold text-[#004D2E] mb-4">
                                 Book a Consultation
