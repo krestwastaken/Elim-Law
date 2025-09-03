@@ -64,37 +64,50 @@ const Contact = () => {
 
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden bg-gradient-to-r from-[#004D2E] to-[#006d42]">
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+
+        {/* Background Image */}
         <img
           src="https://readdy.ai/api/search-image?query=Professional%20modern%20law%20office%20reception%20area%20with%20elegant%20furniture%2C%20warm%20lighting%2C%20sophisticated%20interior%20design%2C%20welcoming%20atmosphere%2C%20contemporary%20legal%20practice%20environment%2C%20clean%20professional%20background&width=1440&height=400&seq=contact1&orientation=landscape"
           alt="Contact Us"
-          className="absolute inset-0 w-full h-full object-cover object-top opacity-30"
+          className="absolute inset-0 w-full h-full object-cover object-center opacity-30"
         />
-        <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-          <div className="max-w-3xl text-white">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Get in Touch</h1>
-            <p className="text-lg mb-8">Ready to discuss your legal needs? Our experienced team is here to provide you with personalized legal solutions. Contact us today to schedule your consultation.</p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center">
-                <i className="fas fa-phone text-3xl mb-3"></i>
-                <h3 className="font-serif font-bold mb-2">Call Us</h3>
-                <p className="text-sm">+234 802 732 8872</p>
-              </div>
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center">
-                <i className="fas fa-envelope text-3xl mb-3"></i>
-                <h3 className="font-serif font-bold mb-2">Email Us</h3>
-                <p className="text-sm">info@elimlawpractice.com</p>
-              </div>
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg text-center">
-                <i className="fas fa-clock text-3xl mb-3"></i>
-                <h3 className="font-serif font-bold mb-2">Office Hours</h3>
-                <p className="text-sm">Mon-Fri: 9:00 AM - 6:00 PM</p>
-              </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 h-full flex items-center justify-center md:justify-start relative z-10">
+          <div className="max-w-3xl text-white text-center md:text-left">
+            {/* Title */}
+            <h1 className="text-3xl md:text-5xl font-serif font-bold mb-3 md:mb-4">
+              Get in Touch
+            </h1>
+            <p className="text-sm md:text-lg mb-6 md:mb-8 px-2 md:px-0">
+              Ready to discuss your legal needs? Our experienced team is here to provide you with personalized legal solutions. Contact us today to schedule your consultation.
+            </p>
+
+            {/* Contact Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8">
+              {[
+                { icon: "fas fa-phone", title: "Call Us", text: "+234 802 732 8872" },
+                { icon: "fas fa-envelope", title: "Email Us", text: "info@elimlawpractice.com" },
+                { icon: "fas fa-clock", title: "Office Hours", text: "Mon-Fri: 9:00 AM - 6:00 PM" },
+              ].map(({ icon, title, text }, index) => (
+                <div
+                  key={index}
+                  className="bg-white bg-opacity-10 backdrop-blur-sm p-4 md:p-6 rounded-lg text-center"
+                >
+                  <i className={`${icon} text-2xl md:text-3xl mb-2 md:mb-3`}></i>
+                  <h3 className="font-serif font-bold mb-1 md:mb-2 text-base md:text-lg">
+                    {title}
+                  </h3>
+                  <p className="text-xs md:text-sm">{text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Contact Form Section */}
       <section className="py-16 bg-gray-50">

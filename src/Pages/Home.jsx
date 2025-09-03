@@ -213,7 +213,9 @@ function Home() {
                                 href="tel:+2348027328872"
                                 className="block text-lg font-semibold text-[#004D2E] hover:underline mb-4"
                             >
-                                📞 +234 802 732 8872
+                                <button className='bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap'>
+                                    +234 802 732 8872
+                                </button>                                
                             </a>
 
                             {/* Email */}
@@ -221,7 +223,10 @@ function Home() {
                                 href="mailto:info@elimlawpractice.com"
                                 className="block text-lg font-semibold text-[#004D2E] hover:underline"
                             >
-                                ✉️ info@elimlawpractice.com
+                                <button className='bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap'>
+                                    info@elimlawpractice.com
+                                </button>
+                                
                             </a>
                         </section>
 
