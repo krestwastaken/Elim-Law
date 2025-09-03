@@ -15,7 +15,7 @@ const AboutUs = () => {
                 <div className="absolute inset-0 bg-[#004D2E] bg-opacity-70"></div>
                 <div className="container mx-auto px-4 h-full flex items-center relative z-10">
                     <div className="max-w-3xl text-white">
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Leading the Future of Legal Excellence</h2>
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">About Us</h2>
                         <p className="text-lg mb-8">As a modern legal practice, we combine cutting-edge technology with exceptional expertise to deliver innovative solutions for today's complex legal challenges. Our commitment to excellence and client success drives us to continuously evolve and set new standards in legal service.</p>
                     </div>
                 </div>

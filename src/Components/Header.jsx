@@ -71,16 +71,35 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <nav className="md:hidden bg-white py-4 px-4 shadow-inner">
-          <div className="flex flex-col space-y-4">
-            <NavLink to="/" className={linkClasses}>Home</NavLink>
-            <NavLink to="/about" className={linkClasses}>About Us</NavLink>
-            <NavLink to="/practice-areas" className={linkClasses}>Practice Areas</NavLink>
-            <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
-          </div>
-        </nav>
-      )}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.nav 
+           className="md:hidden bg-white py-4 px-4 shadow-inner"
+           initial= {{ opacity: 0, y: -20 }}
+           animate= {{ opacity: 1, y: 0 }}
+           exit={{ opacity: 0, y: -20 }}
+           transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
+            <div className="flex flex-col space-y-4">
+              {[
+                { to: '/', label: 'Home' },
+                { to: '/about', label: 'About Us' },
+                { to: '/practice-areas', label: 'Practice Areas' },
+                { to: '/contact', label: 'Contact' }
+              ].map(({ to, label }) => (
+                <NavLink
+                key={to}
+                to={to}
+                className={linkClasses}
+                onClick={() => setIsMenuOpen(false)}
+                >
+                  {label}
+                </NavLink>
+              ))}
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
