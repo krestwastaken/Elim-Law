@@ -277,59 +277,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white p-8 rounded-lg shadow-lg">
-                            <h3 className="text-2xl font-serif font-bold text-[#004D2E] mb-6">Schedule Your Consultation</h3>
-                            <form className="space-y-4">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="firstName" className="block text-gray-700 mb-1 font-medium">First Name</label>
-                                        <input
-                                        type="text"
-                                        id="firstName"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="lastName" className="block text-gray-700 mb-1 font-medium">Last Name</label>
-                                        <input
-                                         type="text"
-                                         id="lastName"
-                                         className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="email" className="block text-gray-700 mb-1 font-medium">Email</label>
-                                    <input
-                                     type="email"
-                                     id="email"
-                                     className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                    />
-                                </div>
-                                <div>
-                                    <label htmlFor="phone" className="block text-gray-700 mb-1 font-medium">Phone</label>
-                                    <input
-                                     type="tel"
-                                     id="phone"
-                                     className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                    />
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="block text-gray-700 mb-1 font-medium">Brief Description of Legal Matter</label>
-                                    <textarea
-                                     id="message"
-                                     rows={4}
-                                     className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004D2E] focus:border-transparent"
-                                    ></textarea>
-                                </div>
-                                <button
-                                 type="submit"
-                                 className="w-full bg-[#004D2E] text-white px-6 py-3 font-bold hover:bg-[#006d42] transition duration-300 cursor-pointer !rounded-button whitespace-nowrap"
-                                >
-                                    Schedule Free Consultation
-                                </button>
-                            </form>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
