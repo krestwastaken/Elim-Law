@@ -1,4 +1,4 @@
-import { lawyers, officeInfo } from "../Components/data";
+import { lawyers, officeInfo, chooseUs, practiceAreas } from "../Components/data";
 
 function Home() {
   return (
@@ -44,44 +44,7 @@ function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "fa-landmark",
-                title: "Corporate Law",
-                description:
-                  "Expert legal advice for businesses of all sizes, from startups to established corporations.",
-              },
-              {
-                icon: "fa-gavel",
-                title: "Litigation",
-                description:
-                  "Skilled representation in court proceedings and dispute resolution across various legal matters.",
-              },
-              {
-                icon: "fa-home",
-                title: "Banking and Finance",
-                description:
-                  "Helps banks, businesses, and individuals manage loans, investments, and financial transactions while staying within the rules.",
-              },
-              {
-                icon: "fa-users",
-                title: "Project Finance",
-                description:
-                  "Supports big projects like roads, power plants, or factories by setting up clear agreements on funding, risks, and responsibilities so the project can run smoothly.",
-              },
-              {
-                icon: "fa-balance-scale",
-                title: "Property Law",
-                description:
-                  "Deals with owning, buying, selling, or renting land and buildings. It protects people’s rights to their property and helps resolve disputes if they arise.",
-              },
-              {
-                icon: "fa-file-contract",
-                title: "Oil and Gas",
-                description:
-                  "Covers the rules for finding, drilling, and selling oil and gas.",
-              },
-            ].map((area, index) => (
+            {practiceAreas.map((area, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow duration-300 group"
@@ -111,26 +74,7 @@ function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "fa-award",
-                title: "Experienced Team",
-                description:
-                  "Our attorneys bring decades of combined experience across various legal disciplines.",
-              },
-              {
-                icon: "fa-handshake",
-                title: "Client-Focused Approach",
-                description:
-                  "We prioritize your needs and work tirelessly to achieve your desired outcomes.",
-              },
-              {
-                icon: "fa-star",
-                title: "Proven Results",
-                description:
-                  "Our track record speaks for itself with numerous successful cases and satisfied clients.",
-              },
-            ].map((point, index) => (
+            {chooseUs.map((point, index) => (
               <div key={index} className="text-center p-6">
                 <div className="text-[#004D2E] text-4xl mb-4">
                   <i className={`fas ${point.icon}`}></i>
